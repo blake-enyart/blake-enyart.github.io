@@ -1,0 +1,367 @@
+/*Defaults*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: 38em) {
+    font-size: 18px;
+  }
+}
+
+body {
+  color: #515151;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+a {
+  color: #515151;
+
+  // `:focus` is linked to `:hover` for basic accessibility
+  &:hover,
+  &:focus {
+    color: #000000
+  }
+
+  strong {
+    color: inherit;
+  }
+}
+
+/*All that*/
+.allthat-list {
+  line-height: 2.0;
+}
+
+.allthat {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+
+.allthat a {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.allthat small {
+  font-size: 75%;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0;
+}
+
+.allthat span {
+  font-size: 80%;
+  font-weight: 400;
+  color: #505050;
+  opacity: 90;
+  letter-spacing: 0;
+}
+
+.allthatmovies {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+
+.allthatmovies a {
+    color: #16A085;
+    font-weight: bold;
+  }
+
+/*Masthead*/
+.masthead {
+  padding-top:    2rem;
+  padding-bottom: 1rem;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+
+/*Type Animation*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*Type*/
+#landing
+{
+   line-height: 1.25;
+   font-size: 1rem;
+}
+
+#landing a {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: #303030;
+}
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: .5rem;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+
+  &[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+  }
+}
+
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 30em) {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+
+// Markdown footnotes
+//
+// See the example content post for an example.
+
+// Footnote number within body text
+a[href^="#fn:"],
+// Back to footnote link
+a[href^="#fnref:"] {
+  display: inline-block;
+  margin-left: .1rem;
+  font-weight: bold;
+}
+
+// List of footnotes
+.footnotes {
+  margin-top: 2rem;
+  font-size: 85%;
+}
+
+// Custom type
+//
+// Extend paragraphs with `.lead` for larger introductory text.
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+//Portfolio
+.root-link {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.root-link:hover {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.top-row {
+  margin-top: 35px;
+}
+
+.portfolio-header {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.github-portfolio-icon {
+  margin-right: 5px;
+}
+
+.project {
+  font-family: 'Open Sans';
+  font-size: .9em;
+  font-weight: 300;
+  overflow:hidden;
+  position:relative
+}
+
+.project img {
+  width: 100%;
+  height: 185px;
+}
+
+.project h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.project p {
+  font-size: 100%;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.portfolio-back-end {
+  font-weight: 400;
+}
+
+.back-end {
+  margin-top: 0;
+  margin-left: 30px;
+}
+
+.back-end-header {
+  font-weight: 300;
+}
+
+//
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+//
+@-webkit-keyframes fadeInProject { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeInProject { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeInProject { from { opacity:0; } to { opacity:1; } }
+
+.fade-in-project {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeInProject ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInProject ease-in 1;
+  animation:fadeInProject ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:3s;
+  -moz-animation-duration:3s;
+  animation-duration:3s;
+}
+
+.thumbnail {
+  padding: 0;
+  overflow: hidden;
+}
+
+.caption {
+  padding: 4px;
+}
