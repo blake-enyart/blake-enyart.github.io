@@ -33,9 +33,11 @@ main {
 }
 
 .headshot img {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 5px;
   height: auto;
-  width: 300px;
-  border-radius: 10px;
+  width: 400px;
   margin: 20px;
 }
 
@@ -142,11 +144,15 @@ a {
 .landing
 {
    line-height: 1.5;
-   font-size: 1rem;
+   font-size: 1.25rem;
 }
 
 .landing a {
   font-weight: bold;
+}
+
+.main-text {
+  padding-right: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -158,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h2 {
