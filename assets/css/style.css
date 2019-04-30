@@ -27,6 +27,18 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.headshot img {
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
 .light {
   font-weight: 300;
 }
@@ -127,13 +139,13 @@ a {
 }
 
 /*Type*/
-#landing
+.landing
 {
-   line-height: 1.25;
+   line-height: 1.5;
    font-size: 1rem;
 }
 
-#landing a {
+.landing a {
   font-weight: bold;
 }
 
