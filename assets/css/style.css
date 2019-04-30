@@ -37,7 +37,7 @@ main {
   border-radius: 50px;
   padding: 5px;
   height: auto;
-  width: 400px;
+  width: 25rem;
   margin: 20px;
 }
 
@@ -62,48 +62,6 @@ a {
     color: inherit;
   }
 }
-
-/*All that*/
-.allthat-list {
-  line-height: 2.0;
-}
-
-.allthat {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
-}
-
-.allthat a {
-  color: #2980b9;
-  font-weight: bold;
-}
-
-.allthat small {
-  font-size: 75%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: 0;
-}
-
-.allthat span {
-  font-size: 80%;
-  font-weight: 400;
-  color: #505050;
-  opacity: 90;
-  letter-spacing: 0;
-}
-
-.allthatmovies {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
-}
-
-.allthatmovies a {
-    color: #16A085;
-    font-weight: bold;
-  }
 
 /*Masthead*/
 .masthead {
@@ -152,7 +110,7 @@ a {
 }
 
 .main-text {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
