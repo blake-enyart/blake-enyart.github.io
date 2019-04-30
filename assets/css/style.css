@@ -27,6 +27,20 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.headshot img {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 5px;
+  height: auto;
+  width: 400px;
+  margin: 20px;
+}
+
 .light {
   font-weight: 300;
 }
@@ -127,14 +141,18 @@ a {
 }
 
 /*Type*/
-#landing
+.landing
 {
-   line-height: 1.25;
-   font-size: 1rem;
+   line-height: 1.5;
+   font-size: 1.25rem;
 }
 
-#landing a {
+.landing a {
   font-weight: bold;
+}
+
+.main-text {
+  padding-right: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -146,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h2 {
