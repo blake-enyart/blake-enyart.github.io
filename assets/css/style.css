@@ -33,9 +33,9 @@ body {
 
 .headshot img {
   border: 1px solid #ddd;
-  border-radius: 50px;
+  border-radius: 10%;
   height: auto;
-  margin: 0 15px;
+  margin: 0 5px;
   margin-top: 50px;
   padding: 5px;
   width: 100%;
@@ -110,7 +110,7 @@ a {
 }
 
 .main-text {
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
