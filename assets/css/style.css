@@ -22,6 +22,11 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+/* Landing */
+a:hover, a:visited, a:active, a:link {
+  text-decoration: none;
+}
+
 .about-container {
   display: flex;
   flex-direction: row;
@@ -29,6 +34,35 @@ body {
 
 .about-card {
   width: 50%;
+}
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-card {
+  width: 150px;
+  margin: 10px;
+}
+
+.link-content {
+  align-items: center;
+  border: 2px solid #515151;
+  display: flex;
+  justify-content: center;
+}
+
+.link-content:hover {
+  background-color: #515151;
+  color: #fff;
+}
+
+.link-content a {
+  color: inherit;
+  display: table;
+  line-height: 70px;
+  text-align: center;
 }
 
 .headshot img {
@@ -48,6 +82,7 @@ body {
 .semibold {
   font-weight: 600;
 }
+/* Landing end */
 
 a {
   color: #515151;
@@ -63,7 +98,7 @@ a {
   }
 }
 
-/*Masthead*/
+/* Masthead */
 .masthead {
   padding-top:    2rem;
   padding-bottom: 1rem;
@@ -74,6 +109,7 @@ a {
   margin-bottom: 0;
   color: #505050;
 }
+/* Masthead end */
 
 /*Type Animation*/
 .typed-cursor{
@@ -140,18 +176,8 @@ h4, h5, h6 {
   font-size: 1rem;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 strong {
   color: #303030;
-}
-
-ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 dt {
@@ -182,118 +208,7 @@ abbr {
   }
 }
 
-blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 30em) {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
-  }
-}
-
-
-// Markdown footnotes
-//
-// See the example content post for an example.
-
-// Footnote number within body text
-a[href^="#fn:"],
-// Back to footnote link
-a[href^="#fnref:"] {
-  display: inline-block;
-  margin-left: .1rem;
-  font-weight: bold;
-}
-
-// List of footnotes
-.footnotes {
-  margin-top: 2rem;
-  font-size: 85%;
-}
-
-// Custom type
-//
-// Extend paragraphs with `.lead` for larger introductory text.
-
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-//Portfolio
-.root-link {
-  text-decoration: none;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
-
-.root-link:hover {
-  text-decoration: none;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
-
-.top-row {
-  margin-top: 35px;
-}
-
-.portfolio-header {
-  font-family: 'Open Sans';
-  font-weight: 300;
-  margin-bottom: 50px;
-}
-
-.github-portfolio-icon {
-  margin-right: 5px;
-}
-
-.project {
-  font-family: 'Open Sans';
-  font-size: .9em;
-  font-weight: 300;
-  overflow:hidden;
-  position:relative
-}
-
-.project img {
-  width: 100%;
-  height: 185px;
-}
-
-.project h6 {
-  font-size: 100%;
-  font-weight: 400;
-}
-
-.project p {
-  font-size: 100%;
-}
-
-.project a {
-  text-decoration: none;
-}
-
-.portfolio-back-end {
-  font-weight: 400;
-}
-
-.back-end {
-  margin-top: 0;
-  margin-left: 30px;
-}
-
-.back-end-header {
-  font-weight: 300;
-}
-
-//
+/* Animation */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -314,30 +229,3 @@ a[href^="#fnref:"] {
 }
 
 //
-@-webkit-keyframes fadeInProject { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeInProject { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeInProject { from { opacity:0; } to { opacity:1; } }
-
-.fade-in-project {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeInProject ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeInProject ease-in 1;
-  animation:fadeInProject ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:3s;
-  -moz-animation-duration:3s;
-  animation-duration:3s;
-}
-
-.thumbnail {
-  padding: 0;
-  overflow: hidden;
-}
-
-.caption {
-  padding: 4px;
-}
