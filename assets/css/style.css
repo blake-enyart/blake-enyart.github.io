@@ -40,12 +40,13 @@ a:hover, a:visited, a:active, a:link {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .link-card {
   width: 40%;
   margin: 0 10px;
-  min-width: 125px;
+  min-width: 140px;
 }
 
 .link-content {
@@ -59,8 +60,8 @@ a:hover, a:visited, a:active, a:link {
 }
 
 .link-content:hover {
-  background-color: #515151;
   color: #fff;
+  padding: 5px;
 }
 
 .link-content a {
@@ -71,6 +72,10 @@ a:hover, a:visited, a:active, a:link {
   padding: inherit;
   text-align: center;
   width: inherit;
+}
+
+.link-content a:hover {
+  background-color: #515151;
 }
 
 .headshot img {
