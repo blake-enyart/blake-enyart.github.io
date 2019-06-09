@@ -42,7 +42,7 @@ a:hover, a:visited, a:active, a:link {
 }
 
 .link-card {
-  width: 150px;
+  width: 40%;
   margin: 10px;
 }
 
@@ -51,7 +51,6 @@ a:hover, a:visited, a:active, a:link {
   border: 2px solid #515151;
   display: flex;
   justify-content: center;
-  width: inherit;
 }
 
 .link-content:hover {
@@ -64,7 +63,7 @@ a:hover, a:visited, a:active, a:link {
   display: table;
   line-height: 70px;
   text-align: center;
-  width: inherit;
+  width: 100%;
 }
 
 .headshot img {
