@@ -33,7 +33,7 @@ a:hover, a:visited, a:active, a:link {
 }
 
 .about-card {
-  width: 50%;
+  width: 40%;
 }
 
 .link-container {
@@ -45,6 +45,7 @@ a:hover, a:visited, a:active, a:link {
 .link-card {
   width: 40%;
   margin: 0 10px;
+  min-width: 125px;
 }
 
 .link-content {
@@ -52,6 +53,7 @@ a:hover, a:visited, a:active, a:link {
   display: flex;
   justify-content: center;
   line-height: 50px;
+  min-width: inherit;
   padding: 5px;
   width: 100%;
 }
@@ -65,7 +67,7 @@ a:hover, a:visited, a:active, a:link {
   border: 2px solid #515151;
   color: inherit;
   display: table;
-  min-width: 100px;
+  min-width: inherit;
   padding: inherit;
   text-align: center;
   width: inherit;
@@ -75,7 +77,7 @@ a:hover, a:visited, a:active, a:link {
   border: 1px solid #ddd;
   border-radius: 10%;
   height: auto;
-  margin: 0 5px;
+  margin: 10px;
   margin-top: 50px;
   padding: 5px;
   width: 100%;
@@ -149,10 +151,6 @@ a {
 
 .landing a {
   font-weight: bold;
-}
-
-.main-text {
-  padding-right: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
